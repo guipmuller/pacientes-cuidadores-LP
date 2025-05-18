@@ -1,0 +1,42 @@
+@use "../variables" as *;
+
+.functions {
+  h2 {
+    font-family: Barlow Condensed;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: map-get($map: $colors, $key: "black");
+  }
+}
+
+.functionsContainer {
+  display: flex;
+  text-align: center;
+  gap: 2rem;
+  padding: 0 3rem;
+
+  h3 {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  p {
+    font-weight: 100;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($colors, "blue-200");
+    padding: 0.7rem;
+    margin: 1rem;
+    border-radius: 2rem;
+  }
+
+  img {
+    width: 25px;
+  }
+}

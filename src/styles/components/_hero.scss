@@ -1,0 +1,27 @@
+@use "../variables" as *;
+
+.hero {
+  h2 {
+    color: white;
+    z-index: 2;
+    font-family: Raleway;
+  }
+
+  button {
+    position: relative;
+    z-index: 2;
+    font-family: Barlow Condensed;
+    font-size: x-large;
+    color: white;
+    padding: 0.5rem 4rem;
+    border: solid 2px map-get($colors, "green-300");
+    background-color: transparent;
+    border-radius: 5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: map-get($colors, "green-300");
+      transition: 400ms ease-in-out;
+    }
+  }
+}

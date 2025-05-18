@@ -1,0 +1,82 @@
+@use "../variables" as *;
+
+.header {
+  background-color: map-get($colors, "blue-100");
+  display: flex;
+  padding-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(
+    45deg,
+    map-get($colors, "green-100"),
+    map-get($colors, "blue-100")
+  );
+
+  img {
+    width: 50px;
+    border-radius: 4rem;
+    border: solid 2px map-get($colors, "green-600");
+  }
+
+  h1 {
+    font-family: Raleway;
+    font-weight: 100;
+    color: map-get($colors, "green-600");
+  }
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid map-get($map: $colors, $key: "gray-100");
+
+  p {
+    width: 40%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 100;
+  }
+}
+
+.anotherhero {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  align-items: center;
+  background-color: map-get($colors, "blue-100");
+  background: linear-gradient(
+    map-get($colors, "green-100"),
+    map-get($colors, "blue-100")
+  );
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.02);
+
+  h3 {
+    margin: 0;
+    font-family: Raleway;
+    font-weight: 100;
+    font-size: 1.5rem;
+  }
+
+  button {
+    position: relative;
+    z-index: 2;
+    font-family: Barlow Condensed;
+    font-size: x-large;
+    color: map-get($colors, "blue-500");
+    padding: 0.5rem 4rem;
+    border: solid 2px map-get($colors, "blue-300");
+    background-color: transparent;
+    border-radius: 5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: map-get($colors, "blue-300");
+      transition: 400ms ease-in-out;
+      color: map-get($colors, "white");
+    }
+  }
+}

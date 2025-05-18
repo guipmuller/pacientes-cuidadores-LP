@@ -1,0 +1,32 @@
+// ===== Cores (tons suaves de azul e verde) =====
+$colors: (
+  // Azuis claros (saúde, confiança)
+  "blue-50": #e6f2ff,
+  "blue-100": #cce5ff,
+  "blue-200": #99ccff,
+  "blue-300": #66b2ff,
+  "blue-400": #3399ff,
+  "blue-500": #0080ff, // Azul principal (não escuro)
+
+  // Verdes claros (saúde, natureza)
+  "green-50": #e6f7ed,
+  "green-100": #ccefdb,
+  "green-200": #99dfb7,
+  "green-300": #66cf93,
+  "green-400": #33bf6f,
+  "green-500": #00af4b,
+  "green-600": #348A89, // Verde principal (não escuro)
+
+  // Neutros (para textos e fundos)
+  "gray-50": #f9f9f9,
+  "gray-100": #f0f0f0,
+  "gray-200": #e0e0e0,
+  "gray-300": #cccccc,
+  "black": #333333,
+  "white": #ffffff,
+  "off-white": #FAF9F6,
+);
+
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

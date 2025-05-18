@@ -1,0 +1,48 @@
+@use "../variables" as *;
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: linear-gradient(
+    45deg,
+    map-get($colors, "green-100"),
+    map-get($colors, "blue-100")
+  );
+
+    a {
+        text-decoration: none;
+        color: map-get($colors, 'black');
+        border-bottom: 1px solid map-get($colors, 'green-600');
+
+        &:hover {
+            color: map-get($colors, 'green-600');
+            transition: 400ms ease-in-out;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+        font-size: large;
+        font-family: Lato;
+    }
+
+    button {
+        font-family: Barlow Condensed;
+        padding: 0.2rem 1.5rem;
+        border: none;
+        background-color: map-get($colors, 'green-200');
+        border-radius: 1rem;
+        font-size: large;
+        cursor: pointer;
+
+        &:hover {
+            background-color: map-get($colors, 'green-300');
+            transition: 400ms ease-in-out;
+        }
+    }
+}

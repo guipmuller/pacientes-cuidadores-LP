@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: map-get($colors, "off-white");
+    width: 40%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 20px 0 rgba(0, 0, 0, 0.02);
+}

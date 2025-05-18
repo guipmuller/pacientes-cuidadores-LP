@@ -1,0 +1,82 @@
+@use "../variables" as *;
+
+.footer {
+    display: flex;
+    background-color: map-get($colors, "green-200");
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+        width: 40%;
+        font-family: Raleway;
+
+        a {
+            color: map-get($map: $colors, $key: "black");
+            text-decoration: none;
+            border-bottom: 1px solid;
+
+            &:hover {
+                color: map-get($map: $colors, $key: "blue-500");
+                transition: 400ms ease-in-out;
+            }
+        }
+    }
+
+    form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h4 {
+            font-family: Raleway;
+            font-weight: 100;
+            margin-bottom: 0;
+        }
+        
+        input, textarea {
+            padding: 0.5rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-family: Lato;
+            font-size: 1rem;
+        }
+
+        .messageInput {
+            height: 3rem;
+        }
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-family: Lato;
+        font-size: 1rem;
+        background-color: map-get($colors, "blue-300");
+        color: map-get($colors, "white");
+
+        &:hover {
+            background-color: map-get($colors, "blue-400");
+            transition: 400ms ease-in-out;
+            color: map-get($colors, "white");
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+
+    span {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    img {
+        width: 25px;
+    }
+}
