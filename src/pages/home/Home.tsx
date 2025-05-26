@@ -5,6 +5,7 @@ import Hero from "../../components/Hero";
 import Functions from "../../components/Functions";
 import Plans from "../../components/Plans";
 import Footer from "../../components/Footer";
+import Screenshots from "../../components/Screenshots";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
           profissionais qualificados, com transparência e praticidade.
         </p>
       </div>
+      <Screenshots />
       <Functions />
       <div className="anotherhero">
         <h3>Teste o Plano Premium por 30 dias grátis!</h3>
