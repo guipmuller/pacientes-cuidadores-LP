@@ -1,31 +1,35 @@
 @use "../variables" as *;
 
 .plans {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    h2 {
-        font-family: Raleway;
-        font-size: 2rem;
-        margin: 0;
-        font-weight: 100;
-    }
+  h2 {
+    font-family: Raleway;
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 100;
+  }
 }
 
 .planscontainer {
-    margin: 2rem;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    color: map-get($map: $colors, $key: "black");
+  margin: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  color: map-get($map: $colors, $key: "black");
 
-    @media (min-width: $breakpoint-tablet) and (max-width: 1023px) {
-        flex-wrap: wrap;
-    }
+  @media (min-width: $breakpoint-tablet) and (max-width: 1023px) {
+    flex-wrap: wrap;
+  }
 
-    h3 {
-        text-align: center;
-        font-family: Raleway;
-    }
+  @media (min-width: $breakpoint-mobile) and (max-width: 1023px) {
+    flex-wrap: wrap;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: Raleway;
+  }
 }

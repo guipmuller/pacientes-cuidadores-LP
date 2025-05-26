@@ -1,0 +1,29 @@
+@use "../variables" as *;
+
+.screenshots {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 220px));
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem;
+
+  @media (min-width: $breakpoint-mobile) and (max-width: 1023px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid rgb(185, 185, 185);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
